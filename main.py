@@ -13,10 +13,10 @@ app = FastAPI()
 # Configuração de CORS (Permite que sua loja Shopify acesse este backend)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # Em produção, troque "*" pelo domínio da sua loja
+    allow_origins=["https://shallow.com.br"],
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["https://shallow.com.br"],
+    allow_headers=["https://shallow.com.br"],
 )
 
 # Modelo de dados que vamos receber
