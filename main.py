@@ -15,8 +15,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["https://shallow.com.br"],
     allow_credentials=True,
-    allow_methods=["https://shallow.com.br"],
-    allow_headers=["https://shallow.com.br"],
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Modelo de dados que vamos receber
